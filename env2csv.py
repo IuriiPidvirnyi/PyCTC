@@ -4,7 +4,7 @@ import csv
 
 
 def env_files(input_dir="input"):
-    print("\nENV file(s) to be used in parsing:")
+    print "\nENV file(s) to be used in parsing:"
     count = 0
     env_files = []
     for _file in os.listdir(input_dir):
@@ -22,7 +22,7 @@ def env_parser(env_file, input_dir='input'):
         with open(os.path.join(input_dir, env_file), 'rb') as env_in:
             csv_data = env_in.readlines()
     except:
-        print("Error while read ENV file %s", env_file)
+        print "Error while read ENV file %s", env_file
     else:
         count_lines = 0
         count_else_lines = 0
